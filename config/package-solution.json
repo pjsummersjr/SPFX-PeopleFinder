@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "peoplefinder-client-side-solution",
+    "id": "151f6f5e-ed1f-4f47-8dd2-8717189bc0cd",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/peoplefinder.sppkg"
+  }
+}

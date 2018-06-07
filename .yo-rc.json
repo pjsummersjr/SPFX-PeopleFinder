@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.0",
+    "libraryName": "peoplefinder",
+    "libraryId": "151f6f5e-ed1f-4f47-8dd2-8717189bc0cd",
+    "environment": "spo"
+  }
+}
