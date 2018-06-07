@@ -1,4 +1,11 @@
 import * as React from 'react';
+import {
+    DocumentCard,
+    DocumentCardActivity,
+    DocumentCardPreview,
+    DocumentCardTitle,
+    IDocumentCardPreviewProps
+  } from 'office-ui-fabric-react/lib/DocumentCard';
 
 import Profile from '../models/Profile';
 
@@ -24,7 +31,10 @@ export default class PeopleCard extends React.Component<IPeopleCardProps, IPeopl
 
     public render(): React.ReactElement<IPeopleCardProps> {
         return (
-            <div>{this.state.profileData.displayName} {this.state.profileData.emailAddress}</div>
+            <DocumentCard>
+                <DocumentCardTitle title={this.state.profileData.displayName}/> 
+                <div>{this.state.profileData.emailAddress}</div>
+            </DocumentCard>
         );
     }
 }

@@ -35,11 +35,9 @@ export default class PeopleFinder extends React.Component<IPeopleFinderProps, IP
         <div className={ styles.container }>
           {this.state.profiles.map((profile, index) => {
             return (
-            <div className={ styles.row }>
-              <div className={ styles.column }>
+            
                 <PeopleCard profileData={profile} />
-              </div>
-            </div>);
+);
           })}
         </div>
       </div>
