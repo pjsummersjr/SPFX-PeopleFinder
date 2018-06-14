@@ -31,15 +31,13 @@ export default class PeopleFinder extends React.Component<IPeopleFinderProps, IP
 
   public render(): React.ReactElement<IPeopleFinderProps> {
     return (
-      <div className={ styles.peopleFinder }>
-        <div className={ styles.container }>
-          {this.state.profiles.map((profile, index) => {
-            return (
-            
-                <PeopleCard profileData={profile} />
-);
-          })}
-        </div>
+      //This is the root container - no styling at this point
+      <div> 
+        {this.state.profiles.map((profile, index) => {
+          return (              
+              <PeopleCard profileData={profile} />
+          );
+        })}
       </div>
     );
   }

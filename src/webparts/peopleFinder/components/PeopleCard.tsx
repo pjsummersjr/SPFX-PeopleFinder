@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styles from './PeopleFinder.module.scss';
 import {
     DocumentCard,
     DocumentCardActivity,
@@ -32,8 +33,22 @@ export default class PeopleCard extends React.Component<IPeopleCardProps, IPeopl
     public render(): React.ReactElement<IPeopleCardProps> {
         return (
             <DocumentCard>
-                <DocumentCardTitle title={this.state.profileData.displayName}/> 
-                <div>{this.state.profileData.emailAddress}</div>
+                <div className="ms-Grid">
+                    <div className={styles.row}>
+                        <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
+                            <img src={this.state.profileData.pictureUrl} width="50" />
+                        </div>
+                        <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
+                            <div className={styles.title}>{this.state.profileData.displayName}</div>
+                            <div>{this.state.profileData.title}</div>
+                        </div>
+                    </div>
+                    <div className={styles.row}>
+                        <div className="ms-Grid-col ms-sm12 ms-md12 ms-lg12">
+                            {this.state.profileData.emailAddress}
+                        </div>
+                    </div>
+                </div>                
             </DocumentCard>
         );
     }

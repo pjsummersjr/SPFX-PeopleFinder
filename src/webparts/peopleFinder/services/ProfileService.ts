@@ -56,6 +56,8 @@ export class MockProfileService implements IProfileService {
                "displayName": "Paul Summers",
                "emailAddress": "paul.j.summers@bc.edu",
                "phoneNumber": "555-555-1212",
+               "title": "Chief Architect",
+               "pictureUrl": "https://familyguyaddicts.files.wordpress.com/2014/04/peter-animation-033idlepic4x.png",
                "skills": [],
                "interests": [],
                "recentDocuments": []
